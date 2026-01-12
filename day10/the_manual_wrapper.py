@@ -1,8 +1,8 @@
 def decorator(func):
     def wrapper():
-        print(f"this is wrapper function")
+        print(f"before function")
         func()
-        print(f"end of wrapper function")
+        print(f"after function")
     return wrapper
 def hello():
     print("data science")

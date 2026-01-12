@@ -1,10 +1,10 @@
 def decorator(func):
-    def wrapper(*args,**kwargs):
+    def wrapper(*args):
         print(f"before function")
-        result = func(*args,**kwargs)
+        result = func(*args)
         print(f"after function")
         return result
     return wrapper
 def add(a,b):
     return a+b
-add
+print(add(3,7))
